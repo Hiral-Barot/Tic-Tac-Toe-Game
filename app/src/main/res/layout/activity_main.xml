@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="342dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:shadowColor="@color/material_dynamic_neutral99"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="Welcome to the Game!"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:emojiCompatEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:shadowColor="@color/design_default_color_surface"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textColorHighlight="@color/design_default_color_secondary_variant"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="10dp"
+        android:background="@drawable/grid_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn1"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn2"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn3"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn4"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn5"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn6"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn7"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn8"
+            style="@style/TicTacToeButton"/>
+
+        <Button
+            android:onClick="check"
+            android:id="@+id/btn9"
+            style="@style/TicTacToeButton"/>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
